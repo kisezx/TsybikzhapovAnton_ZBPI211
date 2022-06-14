@@ -10,16 +10,14 @@ def filter_even(li):
   k = list(filter(lambda x: x % 2 == 0, li))
   return k
 
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-d = filter_even(l)
+
+
 
 
 def square(li):
   return list(map(lambda x: x ** 2, li))
 
 
-l = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-l = square(l)
 
 
 
@@ -30,8 +28,7 @@ def bin_search(li, element):
     except ValueError:
         index = -1
     return index
-sortedList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-element = 7
+
 
 
 
@@ -43,12 +40,8 @@ def is_palindrome(str):
             return False
     return True
 
-s = "Рђ СЂРѕР·Р° СѓРїР°Р»Р° РЅР° Р»Р°РїСѓ РђР·РѕСЂР°"
-ans = is_palindrome(s)
-if (ans):
-    print("Yes")
-else:
-    print("No")
+
+
 
 
 
@@ -78,8 +71,6 @@ def calculate(path2file):
             list.append(sum)
     return ','.join([str(i) for i in list])
 
-path = "test_input_file_1.txt"
-string = calculate(path)
 
 
 
@@ -95,9 +86,7 @@ def substring_slice(path1, path2):
         list.append(text1[i][int(line[0]):int(line[1].replace("\n", "")) + 1])
     return " ".join(list)
 
-path1 = "test_import_file_2_1.txt"
-path2 = "test_import_file_2_2.txt"
-text = substring_slice(path1, path2)
+
 
 
 
@@ -137,17 +126,18 @@ class Student:
        return self.fullname
 
     def greeting(self):
-       print("Hello, i am Student")
+
 
     def mean_grade(self):
        return mean(self.grades)
 
     def is_otlichnik(self):
        if(self.mean_grade() >= 4.5):
-           print("YES")
-       else: print("NO")
+           "Yes"
 
-student1 = Student("school", "boy", [5, 4, 5, 5])
+       else: "No"
+
+
 
 
 
@@ -155,9 +145,4 @@ student1 = Student("school", "boy", [5, 4, 5, 5])
 class MyError(Exception):
     def __init__(self, msg):
         self.msg = msg
-
-
-try:
-    raise MyError("TEST ERROR")
-except MyError as ex:
     
